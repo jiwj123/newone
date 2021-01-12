@@ -1,0 +1,63 @@
+// 变量集合
+$baseSize: (
+  "xs": 0.75rem,
+  "sm": 0.875rem,
+  "md": 1rem,
+  "lg": 1.125rem,
+  "xl": 1.25rem,
+);
+$sizes: (
+  "xs": 0.75,
+  "sm": 0.875,
+  "md": 1,
+  "lg": 1.125,
+  "xl": 1.25,
+);
+
+$positions: (
+  "left": left,
+  "center": center,
+  "right": right,
+);
+
+// 透明度
+$opacity: (
+  "1": 0.1,
+  "2": 0.2,
+  "3": 0.3,
+  "4": 0.4,
+  "5": 0.5,
+  "6": 0.6,
+  "7": 0.7,
+  "8": 0.8,
+  "9": 0.9,
+);
+// 方向
+$spacing-directions: (
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left,
+);
+
+// 边距类型
+$spacing-types: (
+  m: margin,
+  p: padding,
+);
+
+// 边距大小
+$spacing-base-size: 1rem;
+$spacing-sizes: (
+  1px: 0.0769,
+  2px: 0.1538,
+  3px: 0.2308,
+  4px: 0.3077,
+  5px: 0.3846,
+  0: 0,
+  1: 0.25,
+  2: 0.5,
+  3: 1,
+  4: 1.5,
+  5: 3,
+);

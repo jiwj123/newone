@@ -1,0 +1,39 @@
+.van-toast {
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    flex-direction: row;
+    min-height: 36px;
+    min-width: 200px;
+    width: 440px;
+    height: auto;
+    background: rgba(65, 0, 0, 0.8);
+    border-radius: 8px;
+    padding: 0;
+    @extend .px-3, .py-2;
+    i {
+        @include font_size(2)
+    }
+    .van-loading__spinner {
+        height: 2rem;
+    }
+    div {
+        margin-top: 0;
+        margin-left: 0.7rem;
+    }
+}
+
+.van-loading {
+    @extend .text-light-pri;
+    .van-loading__text {
+        @extend .text-light-pri;
+    }
+}
+
+.van-list__error-text, .van-list__finished-text, .van-list__loading {
+    @extend .text-light-pri;
+}
+
+.van-field__clear {
+    right: 10px;
+}

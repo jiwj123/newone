@@ -1,0 +1,21 @@
+@import './collect.scss';
+
+// 设置字体大小
+@mixin font_size($size) {
+  font-size: $size * map-get($map: $baseSize, $key: "md");
+  [data-size="xs"] & {
+    font-size: $size * map-get($map: $baseSize, $key: "xs");
+  }
+  [data-size="sm"] & {
+    font-size: $size * map-get($map: $baseSize, $key: "sm");
+  }
+  [data-size="md"] & {
+    font-size: $size * map-get($map: $baseSize, $key: "md");
+  }
+  [data-size="lg"] & {
+    font-size: $size * map-get($map: $baseSize, $key: "lg");
+  }
+  [data-size="xl"] & {
+    font-size: $size * map-get($map: $baseSize, $key: "xl");
+  }
+}

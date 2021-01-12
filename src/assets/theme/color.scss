@@ -1,0 +1,56 @@
+@import "../scss/collect.scss";
+
+.theme-#{$theme-name} {
+  @each $colorKey, $colorVal in $colors {
+    // 字体颜色
+    .text-#{$colorKey} {
+      color: $colorVal;
+    }
+    // 背景颜色
+    .bg-#{$colorKey} {
+      background: $colorVal;
+    }
+    .bg-color-#{$colorKey} {
+      background-color: $colorVal;
+    }
+    // 边框颜色
+    .border-color-#{$colorKey} {
+      border-color: $colorVal;
+    }
+    // 实线
+    .border-#{$colorKey} {
+      border: 1px solid $colorVal;
+    }
+    .border-2-#{$colorKey} {
+      border: 2px solid $colorVal;
+    }
+    // 虚线
+    .border-dashed-#{$colorKey} {
+      border: 1px dashed $colorVal;
+    }
+    // 带方向
+    @each $dirKey, $dirVal in $spacing-directions {
+      .border-#{$dirKey}-#{$colorKey} {
+        border-#{$dirVal}: 1px solid $colorVal;
+      }
+      .border-#{$dirKey}-2-#{$colorKey} {
+        border-#{$dirVal}: 2px solid $colorVal;
+      }
+      // 边框颜色
+      .border-color-#{$dirKey}-#{$colorKey} {
+        border-#{$dirVal}-color: $colorVal;
+      }
+    }
+    // 有透明度
+    @each $opaKey, $opaVal in $opacity {
+      // 有透明度的背景颜色
+      .bg-#{$colorKey}-#{$opaKey} {
+        background: rgba($colorVal, $opaVal);
+      }
+      // 有透明度的背景颜色
+      .border-#{$colorKey}-#{$opaKey} {
+        border: 1px solid rgba($colorVal, $opaVal);
+      }
+    }
+  }
+}
